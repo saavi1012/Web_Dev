@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>To-Do List</title>
+        <style>
+            
+            .containerbox{
+                background: url('https://i.pinimg.com/1200x/6f/40/5d/6f405dd1e4752149f45ce633d5fdc73b.jpg');
+                background-repeat: no-repeat;
+                width: 100vw;
+
+            }
+         .container{
+            background-color: #ffffff;
+            border: 1px solid black;
+            opacity: 0.6;
+            display: flex;
+            flex-direction: column;
+            width: 500px;
+            height: 650px;
+            box-shadow: 3px 3px 10px rgba(0,0,0,0.15);
+            border-top: 5px solid #009578;
+            border-bottom: 5px solid #009578;
+            border-top-right-radius: 25px;
+            border-bottom-left-radius: 25px;
+
+         }
+         .todo{
+            display: flex;
+            justify-content: space-between;
+            padding: 1em;
+         }
+         .todo__value{
+            background: transparent;
+            border: none;
+            outline: none;
+            font-family: "Quicksand", sans-serif;
+            font-size: 1em;
+            font-weight: bold;
+            flex-grow: 1;
+         }
+         .todo:has(.todo__checkbox:checked){
+            color: black;
+            background: #eeeeee;
+            text-decoration: line-through;
+            order: 1;
+         }
+         .todo.todo__checkbox{
+            
+         }
+        </style>
+    </head>
+    <body>
+        <h1>To-Do List...</h1>
+        <div class="containerbox">
+        <div class="container">
+            <div class="todo">
+                <input class="todo__value" type="text" placeholder="write here"
+                onfocus="this.placeholder=''"
+                 onblur="this.placehoder='write here...'" />
+                <input class="todo__checkbox" type="checkbox">
+            </div>
+            <div class="todo">
+                <input class="todo__value" type="text" placeholder="write here"
+                onfocus="this.placeholder=''"
+                onblur="this.placehoder='write here...'" />
+                <input class="todo__checkbox" type="checkbox">
+            </div>
+            <div class="todo">
+                <input class="todo__value" type="text" placeholder="write here"
+                onfocus="this.placeholder=''"
+                onblur="this.placehoder='write here...'" />
+                <input class="todo__checkbox" type="checkbox">
+            </div>
+            <div class="todo">
+                <input class="todo__value" type="text" placeholder="write here"
+                onfocus="this.placeholder=''"
+                onblur="this.placehoder='write here...'" />
+                <input class="todo__checkbox" type="checkbox">
+            </div>
+            <div class="todo">
+                <input class="todo__value" type="text" placeholder="write here"
+                onfocus="this.placeholder=''"
+                onblur="this.placehoder='write here...'" />
+                <input class="todo__checkbox" type="checkbox">
+            </div>
+            <div class="todo">
+                <input class="todo__value" type="text" placeholder="write here"
+                onfocus="this.placeholder=''"
+                onblur="this.placehoder='write here...'" />
+                <input class="todo__checkbox" type="checkbox">
+            </div>
+            <div class="todo">
+                <input class="todo__value" type="text" placeholder="write here"
+                onfocus="this.placeholder=''"
+                onblur="this.placehoder='write here...'" />
+                <input class="todo__checkbox" type="checkbox">
+            </div>
+            <div class="todo">
+                <input class="todo__value" type="text" placeholder="write here"
+                onfocus="this.placeholder=''"
+                onblur="this.placehoder='write here...'" />
+                <input class="todo__checkbox" type="checkbox">
+            </div>
+            <div class="todo">
+                <input class="todo__value" type="text" placeholder="write here"
+                onfocus="this.placeholder=''"
+                onblur="this.placehoder='write here...'" />
+                <input class="todo__checkbox" type="checkbox">
+            </div>
+            <div class="todo">
+                <input class="todo__value" type="text" placeholder="write here"
+                onfocus="this.placeholder=''"
+                onblur="this.placehoder='write here...'" />
+                <input class="todo__checkbox" type="checkbox">
+            </div>
+            <div class="todo">
+                <input class="todo__value" type="text" placeholder="write here"
+                onfocus="this.placeholder=''"
+                onblur="this.placehoder='write here...'" />
+                <input class="todo__checkbox" type="checkbox">
+            </div>
+            <div class="todo">
+                <input class="todo__value" type="text" placeholder="write here"
+                onfocus="this.placeholder=''"
+                onblur="this.placehoder='write here...'" />
+                <input class="todo__checkbox" type="checkbox">
+            </div>
+        </div>
+        </div>
+    </body>
+</html>

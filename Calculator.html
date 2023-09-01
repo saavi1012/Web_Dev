@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculator</title>
+        <style>
+            body{
+                background-image: url('https://c8.alamy.com/comp/DN04ND/seamless-math-symbols-vector-background-DN04ND.jpg');
+                
+            }
+            *{
+                
+                box-sizing: border-box;
+                -webkit-box-sizing: border-box;
+                -moz-box-sizing: border-box;
+
+            }
+            .container{
+                flex-wrap: wrap;
+            }
+            
+            .wrap{
+                flex-wrap: wrap;
+                width: 500px;
+                margin: 180px 600px 100px 700px;
+                height: auto;
+                background: linear-gradient(135deg, #541292, #9a0606);
+                padding: 15px;
+                border-radius: 10px;
+                justify-content: center;
+                align-items: center;
+            }
+            input[type=text]{
+                width: 100%;
+                padding: 10px;
+                font-size: 36px;
+                font-weight: bold;
+                margin-top: 20px;
+                border-radius: 5px;
+                height: 100px;
+            }
+            input[type=button]{
+                width: 112px;
+                padding: 10px;
+                font-size: 22px;
+                font-weight: bold;
+                border-radius: 5px;
+            }
+            
+            
+            #del{
+                width: 100%;
+                
+            }
+        </style>
+    </head> 
+    <body>
+        <div class="container">
+        <div class="wrap">
+            <form name="cal">
+                <br/>
+                <h1 style="color:#ffffff; text-align:center"><u>Shreya's Calculator</u></h1>
+                <br/>
+                <table>
+                <tr>
+                    <td colspan="5"><input type="text" name="display"></td>
+                </tr>
+                
+                <tr>
+                    <td><input type="button" value="9" onclick="cal.display.value+='9'"></td>
+                    <td><input type="button" value="8" onclick="cal.display.value+='8'"></td>
+                    <td><input type="button" value="7" onclick="cal.display.value+='7'"></td>
+                    <td><input type="button" value="+" onclick="cal.display.value+='+'"></td>
+                   
+                    
+                </tr>
+                
+                <tr>
+                    <td><input type="button" value="6" onclick="cal.display.value+='6'"></td>
+                    <td><input type="button" value="5" onclick="cal.display.value+='5'"></td>
+                    <td> <input type="button" value="4" onclick="cal.display.value+='4'"></td>
+                    <td><input type="button" value="-" onclick="cal.display.value+='-'"></td>
+                </tr>
+                
+                <tr>
+                    <td><input type="button" value="3" onclick="cal.display.value+='3'"></td>
+                    <td><input type="button" value="2" onclick="cal.display.value+='2'"></td>
+                    <td><input type="button" value="1" onclick="cal.display.value+='1'"></td>
+                    <td><input type="button" value="*" onclick="cal.display.value+='*'"></td>
+                </tr>
+                
+                <tr>
+                    <td><input type="button" value="0" onclick="cal.display.value+='0'"></td>
+                    <td><input type="button" value="/" onclick="cal.display.value+='/'"></td>
+                    <td><input type="button" value="." onclick="cal.display.value+='.'"></td>
+                    <td><input type="button" value="=" onclick="cal.display.value=eval(cal.display.value)">
+                    </td>
+                    
+                </tr>
+                
+                <tr></tr>
+                <td colspan="4"><input type="button" value="DELETE" onclick="cal.display.value=''" id="del"></td>
+                
+                </table>
+            </form>
+        </div>
+        </div>
+        
+
+    </body>
+</html>
