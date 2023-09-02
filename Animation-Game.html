@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Animated Game</title>
+        <style>
+            *{
+                margin: 0px;
+                padding: 0px;
+                box-sizing: border-box;
+            }
+            .container{
+                width: 100vw;
+                height: 100vh;
+                background-color: beige;
+                border: 5px solid black;
+            }
+            .box1{
+                width: 350px;
+                height: 80px;
+                background-color: #fa2e7f;
+                border: 3px solid #820782;
+                border-radius: 10px;
+                margin: 10px;
+                position: relative;
+                animation: 5s ease-in 1s infinite alternate none running rightMovement;
+
+            }
+            @keyframes rightMovement {
+                from{ top: 5px;
+                      left: 0;
+                }
+                to{ top: 5px;
+                    left: 1500px;
+                }
+                
+            }
+
+            
+            #circle{
+                
+                    width: 110px;
+                    height: 110px;
+                    background-color: hsl(227, 93%, 55%);
+                    border: 3px solid hsl(250, 91%, 22%);
+                    border-radius: 70px;
+                    margin: 10px;
+                    position: relative;
+                    top: 33%;
+                    left: 47%;
+                    animation: 9s ease-in-out 0s infinite alternate-reverse none running circleMovement;
+                    
+            }
+            @keyframes circleMovement{
+                 0%{ top: 1%;
+                left: 3%;
+                }
+                30%{ top: 2%;
+                     left: 90%;
+               }
+               60%{ top: 74%;
+                left: 5%;
+               }
+                
+                80%{
+                     top: 33%;
+                     left: 47%;
+                }
+                100%{ top: 66%;
+                      left: 90%;
+               }
+                    
+                    
+            }
+
+            #box2{
+                width: 350px;
+                height: 80px;
+                background-color: #fa2e7f;
+                border: 3px solid #820782;
+                border-radius: 10px;
+                margin: 10px;
+                position: relative;
+                animation: 5s ease-in 1s infinite alternate backwards running leftMovement;
+
+
+            }
+            @keyframes leftMovement {
+                from{ top: 620px;
+                      left: 1510px;
+                }
+                to{ top: 620px;
+                    left: 0;
+                }
+                
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <div class="container">
+            <div class="box1"></div>
+            <div id="circle"></div>
+            <div id="box2"></div>
+            
+        </div>
+    </body>
+</html>
